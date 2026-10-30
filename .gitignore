@@ -1,0 +1,19 @@
+node_modules/
+data/
+*.sqlite
+*.sqlite-*
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Agent worktrees and local tooling
+.claude/
+
+# Audio eval: TTS clip cache and run output
+evals/audio/.cache/
+evals/audio/results/
+
+# LifeOS hook artifacts (ISA mirror, checkpoint state)
+ISA.html
+.checkpoint-state.json

@@ -1,0 +1,27 @@
+{
+  "agent_id": "agent_3201m4yeph7zft7av6jhwbw29t66",
+  "name": "AI-Native Auto Insurance Quote Line (demo)",
+  "llm": "claude-haiku-5-5",
+  "backup_llms": [
+    "gemini-3.5-flash",
+    "gpt-5.4-mini"
+  ],
+  "voice_id": "EST9Ui6982FZPSi7gCHi",
+  "tts_model": "eleven_v4_turbo",
+  "server_url": "https://quote-line-production.up.railway.app",
+  "tools": {
+    "start_quote": "tool_2501m4yepbk7fs5bq2301y92w48j",
+    "save_driver": "tool_0201m4yepcpgfwbb598n3kwjk7s9",
+    "add_license": "tool_8101m513yxb7efk9pk4yxrk64wtv",
+    "save_vehicle": "tool_7701m4yepcz7eq2a78pffg0mv3zg",
+    "set_coverage": "tool_4801m4yepe2xf658mb2mrkkmr4n9",
+    "get_quote": "tool_8801m4yepebmffetvd845z249h7g",
+    "submit_application": "tool_4501m4yepemneahre524m1pjxkp7",
+    "lookup_application": "tool_7601m4yepfqkfa3v7m8acv4rgjhw",
+    "resume_quote": "tool_1801m4ymjf44fd3rgs8hy7607cv7",
+    "flag_for_human": "tool_4301m4yepg0de1yt8yxk216t8nrd"
+  },
+  "transfer_configured": true,
+  "deployed_at": "2026-10-20T01:39:31.190Z",
+  "git_sha": "5c14729e53c8a9c7728e5e37100e0ff0d7695178"
+}

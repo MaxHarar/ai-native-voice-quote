@@ -1,0 +1,28 @@
+{
+  "conversation_id": "conv_fixture_audio_eval",
+  "status": "done",
+  "metadata": { "call_duration_secs": 240, "conversation_initiation_source": "unknown" },
+  "conversation_initiation_client_data": { "dynamic_variables": { "canary": "true" } },
+  "transcript": [
+    { "role": "agent", "time_in_call_secs": 0, "message": "Thanks for calling, this is a virtual assistant. What's your first and last name?", "tool_calls": [] },
+    { "role": "user", "time_in_call_secs": 6, "message": "Jordan Ellis.", "tool_calls": [] },
+    { "role": "agent", "time_in_call_secs": 8, "message": "Thanks, Jordan. What's the ZIP code where the car is parked overnight?", "tool_calls": [] },
+    { "role": "user", "time_in_call_secs": 12, "message": "#####.", "tool_calls": [] },
+    { "role": "agent", "time_in_call_secs": 14, "message": "Sorry, I missed that. What's the ZIP code?", "tool_calls": [] },
+    { "role": "user", "time_in_call_secs": 18, "message": "Could you say that again?", "tool_calls": [] },
+    { "role": "agent", "time_in_call_secs": 20, "message": "Do you have car insurance now, and roughly how many months have you been insured?", "tool_calls": [] },
+    { "role": "user", "time_in_call_secs": 25, "message": "Yes, about three years.", "tool_calls": [] },
+    { "role": "agent", "time_in_call_secs": 27, "message": null, "tool_calls": [{ "tool_name": "start_quote", "params_as_json": "{\"caller_name\": \"Jordan Ellis\", \"prior_insurance_months\": 36, \"zip\": \"18940\"}" }] },
+    { "role": "agent", "time_in_call_secs": 28, "message": "What's your date of birth?", "tool_calls": [] },
+    { "role": "agent", "time_in_call_secs": 60, "message": "Did I lose you?", "tool_calls": [] },
+    { "role": "agent", "time_in_call_secs": 70, "message": "I didn't catch the last group. Could you read it once more?", "tool_calls": [] },
+    { "role": "agent", "time_in_call_secs": 90, "message": null, "tool_calls": [{ "tool_name": "save_driver", "params_as_json": "{\"driver_index\": 1, \"first_name\": \"Jordan\", \"last_name\": \"Ellis\", \"date_of_birth\": \"1991-03-14\", \"license_state\": \"PA\", \"license_number\": \"1234 5600\", \"years_licensed\": 14, \"tickets_3y\": 0, \"at_fault_accidents_3y\": 0, \"dui_3y\": false}" }] },
+    { "role": "agent", "time_in_call_secs": 100, "message": null, "tool_calls": [{ "tool_name": "save_driver", "params_as_json": "{\"driver_index\": 1, \"first_name\": \"Jordan\", \"last_name\": \"Ellis\", \"date_of_birth\": \"1991-03-14\", \"license_state\": \"PA\", \"license_number\": \"1234 5678\", \"years_licensed\": 15, \"tickets_3y\": 0, \"at_fault_accidents_3y\": 0, \"dui_3y\": false}" }] },
+    { "role": "agent", "time_in_call_secs": 150, "message": null, "tool_calls": [{ "tool_name": "save_vehicle", "params_as_json": "{\"vehicle_index\": 1, \"vin\": \"\", \"year\": 2015, \"make\": \"BMW\", \"model\": \"535i\", \"usage\": \"commute\", \"annual_miles\": 15000}" }] },
+    { "role": "agent", "time_in_call_secs": 190, "message": null, "tool_calls": [{ "tool_name": "set_coverage", "params_as_json": "{\"package\": \"minimum\", \"pay_in_full\": false, \"tort_option\": \"limited\"}" }] },
+    { "role": "agent", "time_in_call_secs": 195, "message": "One moment while I pull your driving record and run your price.", "tool_calls": [] },
+    { "role": "agent", "time_in_call_secs": 197, "message": null, "tool_calls": [{ "tool_name": "get_quote", "params_as_json": "{}" }] },
+    { "role": "agent", "time_in_call_secs": 205, "message": "Your six-month premium is a sample amount. Would you like to submit an application?", "tool_calls": [] },
+    { "role": "user", "time_in_call_secs": 210, "message": "No thanks, not today.", "tool_calls": [] }
+  ]
+}

@@ -1,0 +1,8 @@
+[test]
+# Lines are the gate: every source file must keep >= 90% line coverage.
+# Function coverage counts anonymous arrows (timer callbacks that only fire in production, default
+# logger parameters), so it is held at the current baseline and ratcheted up, not used as the gate.
+coverageThreshold = { lines = 0.9, functions = 0.6 }
+# Network glue verified by live probes (s3.ts) and the process entrypoint (covered by scripts/smoke.ts).
+coveragePathIgnorePatterns = ["agent/**", "evals/**", "scripts/**", "test/**", "src/ops/s3.ts", "src/index.ts"]
+coverageSkipTestFiles = true

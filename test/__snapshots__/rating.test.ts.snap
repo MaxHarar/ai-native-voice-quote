@@ -1,0 +1,34 @@
+// Bun Snapshot v1, https://bun.sh/docs/test/snapshots
+
+exports[`rating engine ISC-2: golden premiums for every persona 1`] = `
+{
+  "clean adult, suburban": {
+    "monthly": 161.83,
+    "six": 941,
+  },
+  "high-value vehicle, premium package": {
+    "monthly": 222,
+    "six": 1302,
+  },
+  "multi-car household": {
+    "monthly": null,
+    "six": 1372,
+  },
+  "no prior insurance, state minimum": {
+    "monthly": 116.83,
+    "six": 671,
+  },
+  "points-heavy": {
+    "monthly": 297.67,
+    "six": 1756,
+  },
+  "teen added to household": {
+    "monthly": 440.17,
+    "six": 2611,
+  },
+  "young driver, urban": {
+    "monthly": 421,
+    "six": 2496,
+  },
+}
+`;

@@ -1,0 +1,198 @@
+{
+  "runId": "20261015T004331",
+  "meta": {
+    "agentId": "agent_3201m4yeph7zft7av6jhwbw29t66",
+    "agentLlm": "claude-haiku-5-5",
+    "backupLlms": [
+      "gemini-3.5-flash",
+      "gpt-5.4-mini"
+    ],
+    "voiceId": "pFZP5JQG7iQjIQuC4Bku",
+    "ttsModel": "eleven_v4_turbo",
+    "userSimulatorLlm": "claude-sonnet-4-6",
+    "harness": "elevenlabs agent-testing simulation, tool mocking off, end-state oracle",
+    "trialsPerTask": 1,
+    "rateTableVersion": "DEMO-NJ-2026.10",
+    "policyHash": "163427f26a6a",
+    "gitSha": "04c0bce",
+    "serverUrl": "https://quote-line-production.up.railway.app",
+    "elapsedSeconds": 51
+  },
+  "aggregate": {
+    "pass^1": 1,
+    "meanSentencesPerAgentTurn": 2.12,
+    "llmJudgeAgreement": 1,
+    "credits": 1372
+  },
+  "tasks": [
+    {
+      "task": "happy-path",
+      "title": "Clean driver, VIN, recommended, monthly, submits",
+      "n": 1,
+      "c": 1,
+      "pass^1": 1,
+      "pass@1": 1
+    },
+    {
+      "task": "out-of-state",
+      "title": "Pennsylvania ZIP → transfer, nothing else collected",
+      "n": 1,
+      "c": 1,
+      "pass^1": 1,
+      "pass@1": 1
+    },
+    {
+      "task": "human-request",
+      "title": "Caller asks for a person mid-flow",
+      "n": 1,
+      "c": 1,
+      "pass^1": 1,
+      "pass@1": 1
+    }
+  ],
+  "trials": [
+    {
+      "task": "happy-path",
+      "trial": 1,
+      "evalTag": "eval-20261015T004331-happy-path-t1",
+      "pass": true,
+      "reasons": [],
+      "status": "applied",
+      "turns": 60,
+      "toolErrors": [],
+      "concision": {
+        "turns": 23,
+        "meanSentences": 2.3,
+        "shareLe2": 0.7
+      },
+      "llmJudge": "success",
+      "credits": 928,
+      "transcript": [
+        "agent: Thanks for calling AI-Native Auto Insurance, this is Lily, a virtual assistant. This call is recorded, and quotes on this demo line aren't binding. To get started, what's your first and last name?",
+        "user: Hi, it's Sarah Smith.",
+        "agent: Nice to meet you, Sarah. What's the ZIP code where the car is parked overnight?",
+        "user: 08540.",
+        "agent: Got it. Do you currently have car insurance, and if so, roughly how many months have you been continuously insured?",
+        "user: Yeah, I've got insurance. Been covered for about 36 months straight.",
+        "agent:  [start_quote]",
+        "agent: ",
+        "agent: Thanks for that, Sarah. What's your date of birth?",
+        "user: March 2nd, 1988.",
+        "agent: Got it. What state issued your driver's license, and what's the license number?",
+        "user: New Jersey. Number is S 1000 0000 0000 01.",
+        "agent: Let me read that back to confirm. S, one zero zero zero, zero zero zero zero, zero zero zero zero, zero one. Is that right?",
+        "user: Yeah, that's right.",
+        "agent: Thanks, got it. How many years have you held your license?",
+        "user: About 20 years.",
+        "agent: How many traffic tickets have you received in the last three years?",
+        "user: None.",
+        "agent: How many at-fault accidents have you had in the last three years?",
+        "user: None of those either.",
+        "agent: Got it. Have you had any DUI or DWI in the last three years?",
+        "user: Nope, none.",
+        "agent:  [save_driver]",
+        "agent: ",
+        "agent: Your driver record is saved. Does anyone else in your household drive the car?",
+        "user: Nope, just me.",
+        "agent: Got it. Do you have the VIN handy, or should we use the year, make, and model?",
+        "user: I've got the VIN. It's 1HGCM82633A004352.",
+        "agent: Let me read that back to confirm. 1HGC, M826, 33A0, 04352. Is that right?",
+        "user: Yep, that's it.",
+        "agent:  [save_vehicle]",
+        "agent: ",
+        "agent: The VIN matches a 2003 Honda Accord. Is this car mostly for commuting, pleasure, or business, and is it ever used for rideshare or delivery?",
+        "user: Commuting, yeah. No rideshare or delivery.",
+        "agent: Got it. Roughly how many miles a year do you drive it?",
+        "user: About 11,000 miles a year.",
+        "agent:  [save_vehicle]",
+        "agent: ",
+        "agent: Your vehicle is saved. Do you have any other vehicles to add?",
+        "user: Nope, just the one car.",
+        "agent: We have three packages: state minimum; recommended, with 100/300 liability and 500-dollar deductibles; or premium, with higher limits and 250-dollar deductibles. Which would you like?",
+        "user: I'll go with the recommended one.",
+        "agent: Recommended, got it. Would you like to pay in full or monthly? Paying in full saves you money.",
+        "user: Monthly works for me.",
+        "agent:  [set_coverage]",
+        "agent: ",
+        "agent: One moment while I pull your driving record and run your price.",
+        "agent:  [get_quote]",
+        "agent: ",
+        "agent: Your six-month premium is eight hundred twenty-six dollars, which works out to one forty-two sixty-seven a month. The biggest factor is your safe driver discount, which lowers the price. Would you like to submit an application?",
+        "user: Yeah, go ahead and submit it.",
+        "agent: Before I submit, here's the summary. You're on the recommended package with 100/300 liability and 500-dollar deductibles, paid monthly. The car is the 2003 Honda Accord, driven about eleven thousand miles a year for commuting. The driver is you, Sarah. The six-month premium is eight hundred twenty-six dollars, or one forty-two sixty-seven a month. Should I submit that?",
+        "user: Yeah, that all looks right. Go ahead.",
+        "agent:  [submit_application]",
+        "agent: ",
+        "agent: Your application number is, slowly: two, six, two, four, eight, seven, two. A specialist will follow up to finalize it, and coverage is not active until then. Is there anything else I can help you with?",
+        "user: Ok so my application number is 2624872, and someone will call me back to finalize it. Got it, thanks!",
+        "agent: You've got it. Thanks for calling, Sarah, and have a great night.",
+        "agent:  [end_call]",
+        "agent: "
+      ]
+    },
+    {
+      "task": "out-of-state",
+      "trial": 1,
+      "evalTag": "eval-20261015T004331-out-of-state-t1",
+      "pass": true,
+      "reasons": [],
+      "status": "transferred",
+      "turns": 11,
+      "toolErrors": [
+        "start_quote:OUT_OF_STATE"
+      ],
+      "concision": {
+        "turns": 4,
+        "meanSentences": 2.25,
+        "shareLe2": 0.5
+      },
+      "llmJudge": "success",
+      "credits": 210,
+      "transcript": [
+        "agent: Thanks for calling AI-Native Auto Insurance, this is Lily, a virtual assistant. This call is recorded, and quotes on this demo line aren't binding. To get started, what's your first and last name?",
+        "user: Hey, it's Pat Kowalski.",
+        "agent: Nice to meet you, Pat. What ZIP code is the car parked in overnight?",
+        "user: 19123.",
+        "agent: Got it. Do you have car insurance right now, and if so, roughly how many months have you been continuously insured? Zero is fine if you're not insured.",
+        "user: Yeah, I've got insurance. Been covered about 30 months.",
+        "agent:  [start_quote]",
+        "agent: ",
+        "agent: This line only quotes cars garaged in New Jersey, so let me connect you with a licensed agent now.",
+        "agent:  [flag_for_human,transfer_to_number]",
+        "agent: "
+      ]
+    },
+    {
+      "task": "human-request",
+      "trial": 1,
+      "evalTag": "eval-20261015T004331-human-request-t1",
+      "pass": true,
+      "reasons": [],
+      "status": "transferred",
+      "turns": 13,
+      "toolErrors": [],
+      "concision": {
+        "turns": 5,
+        "meanSentences": 1.8,
+        "shareLe2": 0.8
+      },
+      "llmJudge": "success",
+      "credits": 234,
+      "transcript": [
+        "agent: Thanks for calling AI-Native Auto Insurance, this is Lily, a virtual assistant. This call is recorded, and quotes on this demo line aren't binding. To get started, what's your first and last name?",
+        "user: Hey, it's Morgan Smith.",
+        "agent: Got it. What's the ZIP code where the car is parked overnight?",
+        "user: It's 07030.",
+        "agent: Do you have car insurance right now, and roughly how many months have you been continuously insured?",
+        "user: Yeah, I do. About 48 months.",
+        "agent:  [start_quote]",
+        "agent: ",
+        "agent: Thanks, Morgan. What's your date of birth?",
+        "user: Actually, can I just talk to a real person please?",
+        "agent: Let me connect you with a licensed agent now.",
+        "agent:  [flag_for_human,transfer_to_number]",
+        "agent: "
+      ]
+    }
+  ]
+}
